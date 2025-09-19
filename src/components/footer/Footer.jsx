@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -21,13 +22,13 @@ function Footer() {
             </p>
           </div>
           {/* Middle links */}
-          <div className="flex flex-col items-center space-y-3 md:items-start md:pl-10 lg:pl-60">
-            <a href="/about" className="hover:text-red-400">
+          <div className="flex flex-col items-center space-y-3 md:items-start md:pl-10 lg:justify-end">
+            <Link to="/about" aria-label="Go to About Us page" className="hover:text-red-400">
               About Us
-            </a>
-            <a href="/contact" className="hover:text-red-400">
+            </Link>
+            <Link to="/contact" aria-label="Go to Contact us" className="hover:text-red-400">
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
 
